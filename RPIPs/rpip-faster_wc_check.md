@@ -22,6 +22,7 @@ This specification introduces the following pDAO protocol parameters:
 | Name                        | Type  | Initial Value | Guardrail |
 | --------------------------- | ----- | ------------- | --------- |
 | `prestake_challenge_period` | Hours | `12`          | `≥12`     |
+
 This specification changes the following pDAO protocol parameter guardrails:
 
 | Name           | Type | Current Guardrail | New Guardrail   |
