@@ -1,9 +1,9 @@
 ---
-rpip: <to be assigned>
+rpip: 79
 title: Faster Withdrawal Credentials Check
 description: Replace validator beacon state proofs with deposit contract root fraud proof system to protect against malicious withdrawal credentials.
 author: knoshua (@knoshua)
-discussions-to: <URL>
+discussions-to: <NEED_TO_ADD_URL>
 status: Draft
 type: Protocol
 category (*only required for Protocol ): Core
