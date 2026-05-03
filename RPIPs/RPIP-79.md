@@ -29,7 +29,7 @@ This specification changes the following pDAO protocol parameter guardrails:
 | -------------- | ---- | ----------------- | --------------- |
 | `reduced_bond` | ETH  | >= 1 and <= 4     | >= 1.1 and <= 4 |
 
-- After `prestake` has been called for a megapool validator, the protocol SHALL allow anyone to provide either:
+- After `prestake` and before `stake` or `stake_without_state_proof` has been called for a megapool validator, the protocol SHALL allow anyone to provide either:
 	1. A beacon state proof showing that `validators` contains a validator with matching `pubkey` and incorrect `withdrawal_credentials` or
 	2. A beacon state proof showing that `pending_deposits` contains a validator with matching `pubkey`, incorrect `withdrawal_credentials`, and a valid `signature`.
 - If one such proof is submitted, the rETH share of the remaining 31 ETH SHALL be returned to the deposit pool. The remaining node operator share SHALL be awarded to the provider of the proof directly or it MAY be awarded in the form of credit while the full 31 ETH are sent to the deposit pool.
