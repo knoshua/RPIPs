@@ -138,7 +138,7 @@ RPIP-83 instead proposes increasing the required node-operator bond for each meg
 
 [RPIP-72](RPIP-72.md) introduced a pdao_share to UARS (set to 0) that will allow the pDAO to collect a share of the ETH earned by megapool validators in the future, but there is currently no way to spend such ETH in the treasury. RPIP-82 adds this functionality and also allows spending any other ERC-20 token.
 
-### RPIP-TBD: On-Chain Signal Voting
+### [RPIP-TBD: On-Chain Signal Voting](rpip-on_chain_signaling.md)
 
 **Status:** Draft; Not yet voted on.
 
