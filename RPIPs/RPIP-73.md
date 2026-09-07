@@ -36,8 +36,6 @@ This specification introduces the following pDAO protocol parameters:
 
 A * designates this parameter as being modifiable by the Security Council without a delay.
 
-### Performance Challenge Mechanism
-
 - If `performance_exits_enabled` is `true`, the protocol SHALL allow anyone to propose a list of validators to exit by:
 	- providing a `start_epoch` > `current_epoch - performance_period - proof_buffer`,
 	- providing `performance_period * (1 - performance_treshold)` epochs within `[start_epoch, min(current_epoch, start_epoch + performance_period)]`,
@@ -47,6 +45,7 @@ A * designates this parameter as being modifiable by the Security Council withou
 	- proving that `activation_epoch` > `start_epoch` for one listed validator. 
 - The person defeating the challenge SHALL be awarded 80% of the `performance_challenge_bond` and the remaining 20% SHALL be burned. 
 - If a proposed exit is not defeated within `performance_challenge_period`, the protocol SHALL allow anyone to add the validators as "requested to exit" as defined by [RPIP-80](RPIP-80.md).
+- The smartnode SHOULD support notifying node operators when their performance puts them at risk of being exited for underperformance.
 
 ## Rationale
 
